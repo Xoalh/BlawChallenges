@@ -28,3 +28,4 @@ const arr4 = [
   ["d", "e", "f"],
 ];
 checkEquality(arr1, arr2);
+still trying to reportError
