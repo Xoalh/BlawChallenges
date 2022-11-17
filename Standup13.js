@@ -7,10 +7,17 @@
 //   console.log(arr.indexOf(5));
 // }
 
+// function sortArray(array) {
+//   const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
+//   console.log(odd);
+//   console.log(array.map((x) => (x % 2 ? odd.shift() : x)));
+// }
+
+//Time complexity
 function sortArray(array) {
-  const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
+  const odd = array.filter((x) => x % 2).sort((a, b) => b - a);
   console.log(odd);
-  console.log(array.map((x) => (x % 2 ? odd.shift() : x)));
+  console.log(array.map((x) => (x % 2 ? odd.pop() : x)));
 }
 
 //sortOdds([1, 7]);
